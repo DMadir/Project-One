@@ -71,7 +71,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible? The main advantage of using ansible playbook configuration is to defined a specific roles which eliminate duplications. 
 
 The playbook implements the following tasks:
- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
 - Install docker.io and download images.
 - Install python3 
 - It also add the kibana into the Elk-VM 
