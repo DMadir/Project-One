@@ -1,5 +1,5 @@
 # Project-One
-This is my first virtual Network Topology in Azure. The diagram is comprised of five VMs, and a load Balancer. The first VM is the jubmp box which is the dedicated get-way. Other VMs are DVWA-1,2 and the ELK. 
+This is my first virtual Network Topology in Azure. The diagram is comprised of five VMs, and a load Balancer. The first VM is the jump box which is the dedicated get-way. Other VMs are DVWA-1,2 and the ELK. 
 
 # Automated ELK Stack Deployment
 
@@ -92,17 +92,17 @@ These Beats allow us to collect the following information from each machine:
 - The Elk-VM collects log from multiple machines and send the data to a single database. 
 - It help in execution of complex searches and virtualization of the network with graphs, and charts. 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In  to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
 - Copy the yaml file to /etc/ansible/roles.
 - Update the playbook file to include ansible yaml configuration file. 
-- Run the playbook, and navigate to ansible-playbook.yml to check that the installation worked as expected
+- Run the playbook, and navigate to ansible-playbook.yml to  that the installation worked as expected
 _
 - which file is the playbook? The playbook is a yaml file. Where do you copy it? You copy it from /etc/ansible/file.
 - Which file do you update to make Ansible run the playbook on a specific machine? We update the /etc/ansible/hosts configuration file. How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 - We use the group name called elkserver in the hosts file to install the ELK server and DVWA VM to install the filebeats. 
-- Which URL do you navigate to in order to check that the ELK server is running? The url is http://104.43.134.167:5601/app/kibana
+- Which URL do you navigate to in  to  that the ELK server is running? The url is http://104.43.134.167:5601/app/kibana
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 1. Command: curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
 2. Command: sudo /etc/ansible/files/filebeat-configuration.yml
