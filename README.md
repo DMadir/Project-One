@@ -1,7 +1,7 @@
 # Project-One
 This is my first virtual Network Topology in Azure. The diagram is comprised of five VMs, and a load Balancer. The first VM is the jubmp box which is the dedicated get-way. Other VMs are DVWA-1,2 and the ELK. 
 
-## Automated ELK Stack Deployment
+# Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -49,12 +49,12 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses: 52.176.0.153, 73.110.46.181, 40.122.126.166
+- whitelisted IP addresses: 52.176.0.153, 73.110.46.181, 40.122.126.166
 
 Machines within the network can only be accessed by the jump Box.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?
-The following machines were allowed to access the ELK VM;
-1. Jump Box. IP address 10.0.0.4
+- Which machine did you allow to access your ELK VM? What was its IP address?
+The following machine was allowed to access the ELK VM;
+-  The Jump Box. IP address 10.0.0.4
 
 
 A summary of the access policies in place can be found in the table below.
@@ -92,21 +92,19 @@ These Beats allow us to collect the following information from each machine:
 - The Elk-VM collects log from multiple machines and send the data to a single database. 
 - It help in execution of complex searches and virtualization of the network with graphs, and charts. 
 ### Using the Playbook
-In  to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
 - Copy the yaml file to /etc/ansible/roles.
 - Update the playbook file to include ansible yaml configuration file. 
-- Run the playbook, and navigate to ansible-playbook.yml to  that the installation worked as expected.
-
- Answer the following questions to fill in the blanks:_
-- Which file is the playbook? The playbook is a yaml file. Where do you copy it? You copy it from /etc/ansible/file.
+- Run the playbook, and navigate to ansible-playbook.yml to check that the installation worked as expected
+_
+- which file is the playbook? The playbook is a yaml file. Where do you copy it? You copy it from /etc/ansible/file.
 - Which file do you update to make Ansible run the playbook on a specific machine? We update the /etc/ansible/hosts configuration file. How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 - We use the group name called elkserver in the hosts file to install the ELK server and DVWA VM to install the filebeats. 
-- Which URL do you navigate to in  to  that the ELK server is running? The url is http://104.43.134.167:5601/app/kibana
+- Which URL do you navigate to in order to check that the ELK server is running? The url is http://104.43.134.167:5601/app/kibana
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 1. Command: curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
 2. Command: sudo /etc/ansible/files/filebeat-configuration.yml
 3. Command: sudo dpkg -i filebeat-7.4.0-amd64.deb
 4. Command: sudo /etc/filebeat/filebeat.yml
-
