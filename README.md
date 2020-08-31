@@ -1,5 +1,5 @@
 # Project-One
-This is my first virtual Network Topology in Azure. The diagram is comprised of five VMs, and a load Balancer. The first VM is the jump box which is the dedicated get-way. Other VMs are DVWA-1,2 and the ELK. 
+This is my first virtual Network Topology in Azure. The diagram is comprised of five VMs, and a load Balancer. The first VM is the jump box which is the dedicated gateway. Other VMs are DVWA-1,2 and the ELK. 
 
 # Automated ELK Stack Deployment
 
