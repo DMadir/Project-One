@@ -97,7 +97,7 @@ In  to use the playbook, you will need to have an Ansible control node already c
 SSH into the control node and follow the steps below:
 - Copy the yaml file to /etc/ansible/roles.
 - Update the playbook file to include ansible yaml configuration file. 
-- Run the playbook, and navigate to ansible-playbook.yml to  that the installation worked as expected
+- Run the playbook, and navigate to ansible-playbook.yml such that the installation worked as expected
 _
 - which file is the playbook? The playbook is a yaml file. Where do you copy it? You copy it from /etc/ansible/file.
 - Which file do you update to make Ansible run the playbook on a specific machine? We update the /etc/ansible/hosts configuration file. How do I specify which machine to install the ELK server on versus which to install Filebeat on?
