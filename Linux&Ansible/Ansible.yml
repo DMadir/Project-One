@@ -12,7 +12,7 @@
 # some basic default values...
 
 #inventory      = /etc/ansible/hosts
-#library        = /usr/share/my_modules/
+#        = /usr/share/my_modules/
 #module_utils   = /usr/share/my_module_utils/
 #remote_tmp     = ~/.ansible/tmp
 #local_tmp      = ~/.ansible/tmp
@@ -77,7 +77,7 @@
 ## Ansible ships with some plugins that require whitelisting,
 ## this is done to avoid running all of a type by default.
 ## These setting lists those that you want enabled for your system.
-## Custom plugins should not need this unless plugin author specifies it.
+## Custom plugins should not need this unless plugin  specifies it.
 
 # enable callback plugins, they can output to stdout but cannot be 'stdout' type.
 #callback_whitelist = timer, mail
@@ -226,10 +226,10 @@ remote_user = TODO
 # when using the 'random' option for cowsay, stencils will be restricted to this list.
 # it should be formatted as a comma-separated list with no spaces between names.
 # NOTE: line continuations here are for formatting purposes only, as the INI parser
-#       in python does not support them.
-#cow_whitelist=bud-frogs,bunny,cheese,daemon,default,dragon,elephant-in-snake,elephant,eyes,\
-#              hellokitty,kitty,luke-koala,meow,milk,moofasa,moose,ren,sheep,small,stegosaurus,\
-#              stimpy,supermilker,three-eyes,turkey,turtle,tux,udder,vader-koala,vader,www
+#       in  does not support them.
+#cow_whitelist=bud-frogs,bunny,,daemon,default,dragon,-in-,,eyes,\
+#              hellokitty,kitty,luke-koala,meow,milk,moofasa,moose,ren,,small,stegosaurus,\
+#              stimpy,supermilker,three-eyes,,,tux,udder,vader-koala,vader,www
 
 # don't like colors either?
 # set to 1 if you don't want colors, or export ANSIBLE_NOCOLOR=1
@@ -258,7 +258,7 @@ remote_user = TODO
 #retry_files_enabled = False
 #retry_files_save_path = ~/.ansible-retry
 
-# squash actions
+#  actions
 # Ansible can optimise actions that call modules with list parameters
 # when looping. Instead of calling the module once per with_ item, the
 # module is called once with all items at once. Currently this only works
@@ -286,8 +286,8 @@ remote_user = TODO
 
 # controls what compression method is used for new-style ansible modules when
 # they are sent to the remote system.  The compression types depend on having
-# support compiled into both the controller's python and the client's python.
-# The names should match with the python Zipfile compression types:
+# support compiled into both the controller's  and the client's .
+# The names should match with the  Zipfile compression types:
 # * ZIP_STORED (no compression. available everywhere)
 # * ZIP_DEFLATED (uses zlib, the default)
 # These values may be set per host via the ansible_module_compression inventory
@@ -411,7 +411,7 @@ remote_user = TODO
 #   * sftp  = use sftp to transfer files
 #   * scp   = use scp to transfer files
 #   * piped = use 'dd' over SSH to transfer files
-#   * smart = try sftp, scp, and piped, in that order [default]
+#   * smart = try sftp, scp, and piped, in that  [default]
 #transfer_method = smart
 
 # if False, sftp will not use batch mode to transfer files. This may cause some
