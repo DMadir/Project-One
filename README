@@ -1,7 +1,4 @@
-# Project-One
-This is my first virtual Network Topology in Azure. The diagram is comprised of five VMs, and a load Balancer. The first VM is the jump box which is the dedicated gateway. Other VMs are DVWA-1,2 and the ELK. 
-
-# Automated ELK Stack Deployment
+ # Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -75,6 +72,7 @@ The playbook implements the following tasks:
 - Install docker.io containers and download images.
 - Install python3-pip 
 - It also add the kibana into the Elk-VM 
+- Increase the virtual memory
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 https://drive.google.com/file/d/15WCDe11V-J2AkLlrylPNtIdJa9RvLliK/view?usp=sharing
@@ -95,7 +93,7 @@ These Beats allow us to collect the following information from each machine:
 In  to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the yaml file to /etc/ansible/roles.
+- Copy the yaml file to /etc/ansible/hosts.
 - Update the playbook file to include ansible yaml configuration file. 
 - Run the playbook, and navigate to ansible-playbook.yml such that the installation worked as expected
 _
